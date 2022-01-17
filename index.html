@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Styling</title>
+    <style>
+        *{/*refers to complete webpage*/
+            margin: 40px;
+            padding: 10px;/*around the element is padding and around the page is margin*/
+        }
+        h3,h2{
+            font-style: italic;
+            color: whitesmoke;
+            
+        }
+        #head{
+            color: rebeccapurple;
+            background-color: hotpink;
+        }
+        .red-bg{
+            background-color: tomato;
+            font-size:large;
+        }
+        .purple{
+            color: white;
+        }
+        .pinky{
+            background-color: blue;
+            border: 5px solid cadetblue;
+        }
+        #conti{
+            background-image: url("shruti.png");
+            background-repeat: no-repeat;
+            background-position-x:right;
+            background-position-y: center;
+            background-size: 420px 220px;
+        }
+        body{
+            /*refers to body of webpage*/
+            background-image: url("bg.jpg");
+            background-repeat: repeat;
+            background-attachment: scroll;
+            /*background-size: 300px 100px;*/
+            background-size: contain;
+            /*background-position: left top;*/
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="head">
+        <h2>Welcome to nature's beauty</h2>
+        Index
+    </div>
+    <div class="red-bg">
+        <h2>Head2</h2>
+        NAMES
+        <ul class="purple">
+            <li>Arjun</li>
+            <li>Yuvi</li>
+            <li>kangana</li>
+            <li>Daripa</li>
+        </ul>
+    </div>
+    <div class="red-bg purple">
+        <h3>Head3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum dolor odio voluptatibus repellat consequatur, nostrum facere. Suscipit voluptatibus, iusto unde ducimus ut non, maiores ex vel esse dolore laudantium.</p>
+    </div>
+
+    <div id ="conti" class="purple">
+        <h2>Head4</h2>
+        <span class="pinky">
+            This is a short message
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#navigate{
+    background-color: black;
+    text-shadow: 2px 2px 5px red;
+    font-size: large;
+    color: darkorange;
+    font-family: "Lucida console" ,monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
