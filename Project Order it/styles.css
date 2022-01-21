@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  background-image: url(food.png);
+  height: 300px;
+  width: 100%;
+}
+
+.img ul {
+  list-style-type: none;
+  background-color: white;
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+.img ul li {
+  display: inline;
+  margin: 15px;
+  color: black;
+  font-size: 30px;
+  font-family: "Dongle", sans-serif;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img ul li:hover {
+  color: #fd0000;
+}
+
+.img #info {
+  position: relative;
+  margin-top: 70px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 75px;
+  font-family: "Dongle", sans-serif;
+  color: #d3cea2;
+}
+
+.boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-family: "Dongle", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side */
+  /* Style the back side */
+}
+
+.boxes h2 {
+  font-size: 55px;
+}
+
+.boxes .flip-box {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+.boxes .flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.boxes .flip-box:hover .flip-box-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.boxes .flip-box-front, .boxes .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.boxes .flip-box-front {
+  background-color: #bbb;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxes .flip-box-back {
+  background-color: #ff7300;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.boxes .flip-box-back li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 15px;
+  font-size: 35px;
+  line-height: 1cm;
+}
+
+.boxes #dine {
+  background-image: url(dinner.jpg);
+}
+
+.boxes #brk {
+  background-image: url(brkfast.png);
+  background-size: 450px 350px;
+}
+
+.boxes #lunch {
+  background-image: url(lunch.jpg);
+  background-size: 450px 350px;
+}
+
+.about {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 20px;
+  font-family: "Dongle", sans-serif;
+  font-size: 75px;
+}
+
+.about #circle {
+  width: 350px;
+  height: 400px;
+  background: red;
+  background-image: url(cook.jpg);
+  background-size: 370px 400px;
+  border-radius: 50%;
+  float: right;
+}
+
+.about #circle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  visibility: hidden;
+}
+
+.about #circle:hover {
+  opacity: 0.7;
+}
+
+.about #circle:hover .a {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about p {
+  font-size: 55px;
+}
+
+.call {
+  font-family: "Dongle", sans-serif;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 55px;
+}
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 50px;
+  background-color: brown;
+  font-size: 30px;
+  font-family: "Dongle", sans-serif;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,215 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+$com-font:'Dongle', sans-serif;
+$fcol:rgb(255, 115, 0);
+$black:black;
+$size:55px;
+
+
+    
+.img{
+    background-image: url(food.png);
+    height:300px;
+    width:100%;
+    ul{
+        list-style-type: none;
+        background-color: white;
+        opacity:0.5;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        
+        
+        
+        li{
+            display: inline;
+            margin: 15px;
+            
+            color:$black;
+            font-size: 30px;
+            font-family: $com-font;
+           font-weight: bold;
+           box-sizing:border-box;
+           
+
+
+
+        }
+        li:hover{
+            color: rgb(253, 0, 0);
+        }
+    }
+    #info{
+        position: relative;
+        margin-top:70px;
+        font-weight: bold;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:75px;
+        font-family: $com-font;
+        color: rgb(211, 206, 162);
+        
+    }
+}
+        
+
+.boxes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: $com-font;
+    box-sizing:border-box;
+    h2{
+        font-size: $size;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 350px;
+        height: 350px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 26px;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side */
+      .flip-box-front {
+        background-color: #bbb;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Style the back side */
+      .flip-box-back {
+        background-color:$fcol;
+        color: white;
+        transform: rotateY(180deg);
+       
+        li{
+            display: flex;
+            flex-direction: row;
+            margin-left: 15px;
+            font-size: 35px;
+            line-height: 1cm;
+
+        }
+      }
+      #dine{
+          background-image: url(dinner.jpg);
+      }
+      #brk{
+          background-image: url(brkfast.png);
+          background-size: 450px 350px;
+      }       
+    #lunch{
+        background-image: url(lunch.jpg);
+        background-size: 450px 350px;
+    }
+
+}
+@mixin ho {
+    .a{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+
+.about{
+      position: relative;
+      margin-top: 100px;
+      margin-left: 20px;
+      font-family: $com-font;
+      font-size: 75px;
+    #circle {
+        width: 350px;
+        height: 400px;
+        background: red;
+        background-image: url(cook.jpg);
+        background-size: 370px 400px;
+        border-radius: 50%;
+        float:right;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            visibility: hidden;
+        }
+       
+       
+        
+      }
+
+    #circle:hover{
+        opacity: 0.7;
+        @include ho;
+    }
+
+    p{
+        font-size: $size;
+
+    }
+        
+  }  
+.call{
+    font-family: $com-font;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: $size;
+}
+ 
+footer{
+    position: relative;
+    margin-top: 100px;
+    width:100%;
+    height:50px;
+    background-color: brown;
+    font-size: 30px;
+    font-family: $com-font;
+    text-align: center;
+}
+   
+
