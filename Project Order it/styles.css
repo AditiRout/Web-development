@@ -27,7 +27,6 @@
 .img ul li {
   display: inline;
   margin: 15px;
-  color: black;
   font-size: 30px;
   font-family: "Dongle", sans-serif;
   font-weight: bold;
@@ -35,8 +34,13 @@
           box-sizing: border-box;
 }
 
-.img ul li:hover {
-  color: #fd0000;
+.img ul li a:link, .img ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.img ul li a:hover {
+  color: red;
 }
 
 .img #info {

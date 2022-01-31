@@ -34,19 +34,28 @@ $size:55px;
             display: inline;
             margin: 15px;
             
-            color:$black;
+            
             font-size: 30px;
             font-family: $com-font;
-           font-weight: bold;
-           box-sizing:border-box;
+            font-weight: bold;
+            box-sizing:border-box;
            
+            a{
+                
+                &:link,&:visited{
+                    text-decoration: none;
+                    color:$black;
+    
+                }
+                &:hover{
+                    color: rgb(255, 0, 0);
+                }
 
-
-
+            }
+           
         }
-        li:hover{
-            color: rgb(253, 0, 0);
-        }
+       
+        
     }
     #info{
         position: relative;
