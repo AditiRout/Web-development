@@ -1,0 +1,23 @@
+{
+  "name": "adittecgh",
+  "version": "1.0.0",
+  "description": "amazing package",
+  "main": "back.js",
+  "scripts": {
+    "start":"npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AditiRout/Web-development.git"
+  },
+  "author": "aditi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AditiRout/Web-development/issues"
+  },
+  "homepage": "https://github.com/AditiRout/Web-development#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

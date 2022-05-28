@@ -7,7 +7,7 @@
     align-items: center;
     animation: slide 3s ease-in 0.5s 2 normal;
     animation: harry 2s ease-out 0 1 reverse;
-
+    
 }
 
 @keyframes slide {

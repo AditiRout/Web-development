@@ -67,3 +67,86 @@ let boxElement = document.getElementsByClassName('box');
 
 
 // elem[0].style.backgroundColor="yellow";
+
+var a =[1,2,3,4];
+var b=a.map(test)
+function test(d){
+    return d*10;}
+    
+console.log(b);
+
+const m=new Map();
+const k1="str",k2={},k3=function(){};
+
+m.set(k1,"this is a string");
+m.set(k2,"this is seecond");
+m.set(k3,"third pje");
+let value1=m.get(k1);
+console.log(value1);
+console.log(m.size);
+
+
+const person = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  
+  // This will return "John Doe":
+  person.fullName();  
+
+  const human = {
+    fullName(city, country) {
+      return this.firstName + " " + this.lastName + "," + city + "," + country;
+    }
+  }
+  
+  const person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  
+  human.fullName.call(person1, "Oslo", "Norway");
+
+  class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+    }
+    age(x) {
+      return x - this.year;
+    }
+  }
+  
+  let date = new Date();
+  let year = date.getFullYear();
+  
+  let myCar = new Car("Ford", 2014);
+  document.getElementById("demo").innerHTML=
+  "My car is " + myCar.age(year) + " years old.";
+
+
+  class product {
+    constructor(brand) {
+      this.carname = brand;
+    }
+    present() {
+      return 'I have a ' + this.carname;
+    }
+  }
+  
+  class Model extends product{
+    constructor(brand, mod) {//in java we use the name of class instead of writing constructor..
+      super(brand);
+      this.model = mod;
+    }
+    show() {
+      return this.present() + ', it is a ' + this.model;
+    }
+  }
+  
+  let bottle = new Model("Ford", "Mustang");
+  bottle.show()
+
