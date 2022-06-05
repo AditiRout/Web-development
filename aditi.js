@@ -150,3 +150,46 @@ const person = {
   let bottle = new Model("Ford", "Mustang");
   bottle.show()
 
+  const myPromise = new Promise(function(myResolve, myReject) {
+    setTimeout(function(){ myResolve("We Won!!"); }, 3000);
+  });
+  
+  myPromise.then(function(value) {
+    document.getElementById("demo").innerHTML = value;
+  });
+
+  const pp=new Promise(function(myResolve,myReject){
+    let x = 45
+    if(x==50){
+      myResolve("x is 50")
+    }else{
+      myReject("x is something else")
+    }
+  })
+  pp.then(
+    function(value){
+      console.log(value)
+    },
+    function(error){
+      console.log(error);
+    }
+  )
+
+  async function myFunction() {
+    return "Hello";
+  }
+  myFunction().then(
+    function(value) {myDisplayer(value);},
+    function(error) {myDisplayer(error);}
+  );
+
+  async function myDisplay() {
+    let myPromise = new Promise(function(resolve, reject) {
+      resolve("I love You !!");
+    });
+    document.getElementById("demo").innerHTML = await myPromise;
+  }
+  
+  myDisplay();
+  
+  
